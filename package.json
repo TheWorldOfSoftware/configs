@@ -13,5 +13,11 @@
     "@worldofsoftware/eslint-configs": "workspace:*",
     "@worldofsoftware/prettier-configs": "workspace:*",
     "@worldofsoftware/typescript-configs": "workspace:*"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
   }
 }
