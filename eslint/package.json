@@ -11,7 +11,6 @@
   "exports": {
     ".": "./js.config.js"
   },
-  "scripts": {},
   "dependencies": {
     "@eslint/js": "^8.57.0",
     "globals": "^15.9.0"
