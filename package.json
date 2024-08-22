@@ -18,6 +18,7 @@
     "lint": "eslint ."
   },
   "devDependencies": {
+    "@types/node": "20.14.8",
     "eslint": "^8.57.0"
   }
 }
