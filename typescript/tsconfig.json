@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "noEmitOnError": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "stripInternal": true,
+    "verbatimModuleSyntax": true,
+    "target": "ESNext"
+  }
+}
