@@ -10,16 +10,6 @@ export default {
     import: eslintImport
   },
 
-  settings: {
-    "import/extensions": [".js", ".cjs", ".mjs"],
-    "import/parsers": {
-      espree: [".js", ".cjs", "mjs"]
-    },
-    "import/resolver": {
-      node: true
-    }
-  },
-
   rules: {
     ...eslintImport.configs.recommended.rules,
 
