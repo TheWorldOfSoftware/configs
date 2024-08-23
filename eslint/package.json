@@ -13,7 +13,6 @@
     "./eslint": "./javascript/eslint.config.js",
   },
   "dependencies": {
-    "@worldofsoftware/eslint-config-eslint": "workspace:*",
-    "@worldofsoftware/eslint-config-typescript": "workspace:*"
+    "@worldofsoftware/eslint-config-javascript": "workspace:*",
   }
 }
