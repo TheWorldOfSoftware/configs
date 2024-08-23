@@ -9,8 +9,7 @@ export default [
     languageOptions: {
       parser: typescriptEslint.parser,
       parserOptions: {
-        projectService: true,
-        tsconfigRootDir: import.meta.dirname
+        projectService: true
       }
     },
 

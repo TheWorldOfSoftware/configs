@@ -7,10 +7,10 @@ export default {
   languageOptions: {
     ecmaVersion: "latest",
     sourceType:"module",
+
     parser: typescriptEslintParser,
     parserOptions: {
-      projectService: true,
-      defaultProject: import.meta.dirname
+      projectService: true
     }
   },
 
