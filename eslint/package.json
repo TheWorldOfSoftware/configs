@@ -10,9 +10,16 @@
   },
   "exports": {
     ".": "./eslint.config.js",
-    "./eslint": "./javascript/eslint.config.js",
+    "./javascript": "./javascript/eslint.config.js",
+    "./typescript": "./typescript/eslint.config.js",
+    "./import": "./import/eslint.config.js",
+    "./import/javascript": "./import/javascript/eslint.config.js",
+    "./import/typescript": "./import/typescript/eslint.config.js"
   },
   "dependencies": {
     "@worldofsoftware/eslint-config-javascript": "workspace:*",
+    "@worldofsoftware/eslint-config-typescript": "workspace:*",
+    "@worldofsoftware/eslint-config-import-javascript": "workspace:*",
+    "@worldofsoftware/eslint-config-import-typescript": "workspace:*"
   }
 }

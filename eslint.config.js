@@ -1,4 +1,4 @@
 import eslint from "@worldofsoftware/eslint-configs";
 import typescriptEslint from "@worldofsoftware/eslint-config-typescript";
 
-export default [eslint, ...typescriptEslint];
+export default [...eslint, ...typescriptEslint];
