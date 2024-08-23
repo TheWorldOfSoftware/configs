@@ -1,4 +1,5 @@
 import eslintImport from "eslint-plugin-import";
+import typescriptEslintParser from "@typescript-eslint/parser";
 
 export default {
   ...eslintImport.configs.typescript,
@@ -6,6 +7,11 @@ export default {
   languageOptions: {
     ecmaVersion: "latest",
     sourceType:"module",
+    parser: typescriptEslintParser,
+    parserOptions: {
+      projectService: true,
+      defaultProject: import.meta.dirname
+    }
   },
 
   plugins: {
