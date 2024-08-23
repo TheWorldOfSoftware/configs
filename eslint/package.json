@@ -11,5 +11,9 @@
   "exports": {
     ".": "./eslint.config.js",
     "./eslint": "./javascript/eslint.config.js",
+  },
+  "dependencies": {
+    "@worldofsoftware/eslint-config-eslint": "workspace:*",
+    "@worldofsoftware/eslint-config-typescript": "workspace:*"
   }
 }
