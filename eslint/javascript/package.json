@@ -1,5 +1,5 @@
 {
-  "name": "@worldofsoftware/eslint-configs",
+  "name": "@worldofsoftware/eslint-config-eslint",
   "version": "0.0.0",
   "license": "AGPL-3.0-only",
   "author": "Scraps",
@@ -9,7 +9,7 @@
     "node": ">=20.11.0"
   },
   "exports": {
-    ".": "./javascript/eslint.config.js",
+    ".": "./eslint.config.js"
   },
   "dependencies": {
     "@eslint/js": "^8.57.0",
