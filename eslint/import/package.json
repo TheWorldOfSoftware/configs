@@ -10,5 +10,8 @@
   },
   "exports": {
     ".": "./index.js"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.29.1"
   }
 }
