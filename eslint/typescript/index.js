@@ -70,13 +70,7 @@ export default [
       "@typescript-eslint/no-unused-expressions": "warn",
       "@typescript-eslint/no-use-before-define": "error",
       "@typescript-eslint/prefer-destructuring": "warn",
-      "@typescript-eslint/return-await": "error",
-
-      // Stylistic Rules
-      "@typescript-eslint/no-empty-interface": [
-        "error",
-        { allowSingleExtends: true }
-      ]
+      "@typescript-eslint/return-await": "error"
     }
   }
 ];
