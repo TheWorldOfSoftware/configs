@@ -9,12 +9,12 @@
     "node": ">=20.11.0"
   },
   "exports": {
-    ".": "./eslint.config.js",
-    "./javascript": "./javascript/eslint.config.js",
-    "./typescript": "./typescript/eslint.config.js",
-    "./import": "./import/eslint.config.js",
-    "./import/javascript": "./import/javascript/eslint.config.js",
-    "./import/typescript": "./import/typescript/eslint.config.js"
+    ".": "./index.js",
+    "./javascript": "./javascript/index.js",
+    "./typescript": "./typescript/index.js",
+    "./import": "./import/index.js",
+    "./import/javascript": "./import/javascript/index.js",
+    "./import/typescript": "./import/typescript/index.js"
   },
   "dependencies": {
     "@worldofsoftware/eslint-config": "workspace:*",

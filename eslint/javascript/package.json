@@ -9,7 +9,7 @@
     "node": ">=20.11.0"
   },
   "exports": {
-    ".": "./eslint.config.js"
+    ".": "./index.js"
   },
   "dependencies": {
     "@eslint/js": "^8.57.0",
