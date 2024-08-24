@@ -1,5 +1,5 @@
 {
-  "name": "@worldofsoftware/eslint-configs",
+  "name": "@worldofsoftware/eslint-config",
   "version": "0.0.0",
   "license": "AGPL-3.0-only",
   "author": "Scraps",
@@ -9,17 +9,10 @@
     "node": ">=20.11.0"
   },
   "exports": {
-    ".": "./index.js",
-    "./javascript": "./javascript/index.js",
-    "./typescript": "./typescript/index.js",
-    "./import": "./import/index.js",
-    "./import/javascript": "./import/javascript/index.js",
-    "./import/typescript": "./import/typescript/index.js"
+    ".": "./index.js"
   },
   "dependencies": {
-    "@worldofsoftware/eslint-config": "workspace:*",
-    "@worldofsoftware/eslint-config-typescript": "workspace:*",
-    "@worldofsoftware/eslint-config-import": "workspace:*",
-    "@worldofsoftware/eslint-config-import-typescript": "workspace:*"
+    "@eslint/js": "^9.9.1",
+    "globals": "^15.9.0"
   }
 }

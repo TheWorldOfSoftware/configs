@@ -1,5 +1,5 @@
 {
-  "name": "@worldofsoftware/eslint-configs-import",
+  "name": "@worldofsoftware/eslint-config-import",
   "version": "0.0.0",
   "license": "AGPL-3.0-only",
   "author": "Scraps",
@@ -10,9 +10,5 @@
   },
   "exports": {
     ".": "./index.js"
-  },
-  "dependencies": {
-    "@worldofsoftware/eslint-config-import": "workspace:*",
-    "@worldofsoftware/eslint-config-import-typescript": "workspace:*"
   }
 }
