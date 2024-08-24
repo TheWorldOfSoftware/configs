@@ -17,9 +17,9 @@
     "./import/typescript": "./import/typescript/eslint.config.js"
   },
   "dependencies": {
-    "@worldofsoftware/eslint-config-javascript": "workspace:*",
+    "@worldofsoftware/eslint-config": "workspace:*",
     "@worldofsoftware/eslint-config-typescript": "workspace:*",
-    "@worldofsoftware/eslint-config-import-javascript": "workspace:*",
+    "@worldofsoftware/eslint-config-import": "workspace:*",
     "@worldofsoftware/eslint-config-import-typescript": "workspace:*"
   }
 }
