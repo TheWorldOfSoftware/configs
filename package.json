@@ -12,8 +12,8 @@
   "dependencies": {
     "@worldofsoftware/eslint-config": "workspace:*",
     "@worldofsoftware/eslint-config-typescript": "workspace:*",
-    "@worldofsoftware/prettier-configs": "workspace:*",
-    "@worldofsoftware/typescript-configs": "workspace:*"
+    "@worldofsoftware/prettier-config": "workspace:*",
+    "@worldofsoftware/typescript-config": "workspace:*"
   },
   "scripts": {
     "lint": "eslint ."
