@@ -1,6 +1,8 @@
 import typescriptEslint from "typescript-eslint";
 
+/** @type string[] */
 const commonBannedImports = [];
+/** @type string[] */
 const commonBannedImportPatterns = [];
 
 export default [

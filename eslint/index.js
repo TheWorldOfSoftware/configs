@@ -1,8 +1,11 @@
 import eslint from "@eslint/js";
 import globals from "globals";
 
+/** @type string[] */
 const commonBannedGlobals = [];
+/** @type string[] */
 const commonBannedImportPatterns = [];
+/** @type string[] */
 const commonBannedImports = [];
 const commonBannedKeywords = [
   "object",
@@ -19,6 +22,7 @@ const commonBannedKeywords = [
   "data",
   "event"
 ];
+/** @type string[] */
 const commonBannedProperties = [];
 const commonBannedSyntax = [
   {
@@ -30,6 +34,7 @@ const commonBannedSyntax = [
     message: "Class expressions are not allowed. Please use a named class instead."
   }
 ];
+/** @type string[] */
 const commonShortKeywords = [];
 
 export default {
@@ -206,4 +211,4 @@ export default {
     "vars-on-top": "warn",
     yoda: ["warn", "never", { exceptRange: true }]
   }
-}
+};
