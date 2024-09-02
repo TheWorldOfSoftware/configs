@@ -1,5 +1,5 @@
 {
-  "extends": "@worldofsoftware/typescript-configs",
+  "extends": "@worldofsoftware/typescript-config",
   "compilerOptions": {
     "outDir": "dist"
   }
