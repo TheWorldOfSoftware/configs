@@ -16,7 +16,8 @@
     "@worldofsoftware/typescript-config": "workspace:*"
   },
   "scripts": {
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "format": "prettier . --write"
   },
   "devDependencies": {
     "@types/eslint__js": "^8.42.3",
