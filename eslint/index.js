@@ -31,7 +31,8 @@ const commonBannedSyntax = [
   },
   {
     selector: "ClassExpression",
-    message: "Class expressions are not allowed. Please use a named class instead."
+    message:
+      "Class expressions are not allowed. Please use a named class instead."
   }
 ];
 /** @type string[] */
@@ -45,7 +46,7 @@ export default {
     ecmaVersion: "latest",
     sourceType: "module",
 
-    globals: globals.nodeBuiltin,
+    globals: globals.nodeBuiltin
   },
   linterOptions: {
     noInlineConfig: true,

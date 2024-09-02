@@ -3,7 +3,7 @@ import eslintImport from "eslint-plugin-import";
 export default {
   languageOptions: {
     ecmaVersion: "latest",
-    sourceType:"module",
+    sourceType: "module"
   },
 
   plugins: {
@@ -85,5 +85,4 @@ export default {
     "import/no-useless-path-segments": "error",
     "import/no-webpack-loader-syntax": "error"
   }
-}
-
+};

@@ -6,7 +6,7 @@ export default {
 
   languageOptions: {
     ecmaVersion: "latest",
-    sourceType:"module",
+    sourceType: "module",
 
     parser: typescriptEslintParser,
     parserOptions: {
@@ -22,4 +22,4 @@ export default {
     ...eslintImport.configs.recommended.rules,
     ...eslintImport.configs.typescript.rules
   }
-}
+};
