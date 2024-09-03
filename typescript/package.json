@@ -1,0 +1,17 @@
+{
+  "name": "@worldofsoftware/typescript-config",
+  "version": "1.0.0",
+  "license": "AGPL-3.0-only",
+  "author": "Scraps",
+  "private": false,
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "exports": {
+    ".": "./tsconfig.json"
+  },
+  "dependencies": {
+    "@tsconfig/strictest": "^2.0.5"
+  }
+}
