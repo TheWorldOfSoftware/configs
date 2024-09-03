@@ -29,11 +29,17 @@ jobs:
       - name: Publish ESLint
         shell: bash
         run: pnpm --filter './eslint' publish -r --fail-if-no-match --access public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish Prettier
         shell: bash
         run: pnpm --filter './prettier' publish -r --fail-if-no-match --access public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish ESLint
         shell: bash
         run: pnpm --filter './typescript' publish -r --fail-if-no-match --access public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
