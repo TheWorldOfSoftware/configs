@@ -28,18 +28,12 @@ jobs:
 
       - name: Publish ESLint
         shell: bash
-        run: pnpm --filter './eslint' publish -r --scope=@worldofsoftware --fail-if-no-match --access public --no-git-checks
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm --filter './eslint' publish -r --fail-if-no-match --access public --no-git-checks
 
       - name: Publish Prettier
         shell: bash
-        run: pnpm --filter './prettier' publish -r --scope=@worldofsoftware --fail-if-no-match --access public --no-git-checks
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm --filter './prettier' publish -r --fail-if-no-match --access public --no-git-checks
 
       - name: Publish ESLint
         shell: bash
-        run: pnpm --filter './typescript' publish -r --scope=@worldofsoftware --fail-if-no-match --access public --no-git-checks
-        env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm --filter './typescript' publish -r --fail-if-no-match --access public --no-git-checks
