@@ -14,6 +14,12 @@ importers:
       '@worldofsoftware/eslint-config':
         specifier: workspace:*
         version: link:eslint
+      '@worldofsoftware/eslint-config-import':
+        specifier: workspace:*
+        version: link:eslint/import
+      '@worldofsoftware/eslint-config-import-typescript':
+        specifier: workspace:*
+        version: link:eslint/import/typescript
       '@worldofsoftware/eslint-config-typescript':
         specifier: workspace:*
         version: link:eslint/typescript

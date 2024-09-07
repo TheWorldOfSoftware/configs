@@ -16,6 +16,8 @@
   "dependencies": {
     "@eslint/compat": "^1.1.1",
     "@worldofsoftware/eslint-config": "workspace:*",
+    "@worldofsoftware/eslint-config-import": "workspace:*",
+    "@worldofsoftware/eslint-config-import-typescript": "workspace:*",
     "@worldofsoftware/eslint-config-typescript": "workspace:*",
     "@worldofsoftware/prettier-config": "workspace:*",
     "@worldofsoftware/typescript-config": "workspace:*"
