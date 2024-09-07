@@ -31,56 +31,10 @@ export default {
     "import/no-absolute-path": "error",
     "import/no-cycle": "error",
     "import/no-dynamic-require": "error",
-    "import/no-internal-modules": ["error", { allow: ["**/util/**/*"] }],
+    "import/no-internal-modules": "error",
     "import/no-relative-packages": "error",
     "import/no-relative-parent-imports": "error",
-    "import/no-restricted-paths": [
-      "error",
-      {
-        zones: [
-          {
-            from: "src/*",
-            message: "Do not access application files from logic!",
-            target: "src/*/**/*"
-          },
-          {
-            from: "src/routes/**/*",
-            message: "Do not access routes from feature functionality!",
-            target: "src/features/**/*"
-          },
-          {
-            from: "src/!(lib)/**/*",
-            message: "Lib files cannot access application logic!",
-            target: "src/lib/**/*"
-          },
-          {
-            from: [
-              "src/features/**/*",
-              "src/repositories/**/*",
-              "src/routes/**/*"
-            ],
-            message: "Do not access logic from a data model!",
-            target: "src/models/**/*"
-          },
-          {
-            from: ["src/features/**/*", "src/routes/**/*"],
-            message: "Do not access logic from a repository!",
-            target: "src/repositories/**/*"
-          },
-          {
-            from: "src/repositories/**/*",
-            message: "Do not access repositories directly!",
-            target: "src/routes/**/*"
-          },
-          {
-            except: ["src/models/**/*", "src/types/**/*"],
-            from: "src/**/*",
-            message: "Do not access logic from type definitions!",
-            target: "src/types/**/*"
-          }
-        ]
-      }
-    ],
+    "import/no-restricted-paths": "error",
     "import/no-self-import": "error",
     "import/no-useless-path-segments": "error",
     "import/no-webpack-loader-syntax": "error"

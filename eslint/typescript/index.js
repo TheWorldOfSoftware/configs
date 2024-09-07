@@ -1,10 +1,5 @@
 import typescriptEslint from "typescript-eslint";
 
-/** @type string[] */
-const commonBannedImports = [];
-/** @type string[] */
-const commonBannedImportPatterns = [];
-
 export default [
   ...typescriptEslint.configs.strictTypeChecked,
   {
@@ -18,6 +13,7 @@ export default [
     plugins: {
       "@typescript-eslint": typescriptEslint.plugin
     },
+
     rules: {
       // Supported Rules
       "@typescript-eslint/consistent-type-exports": "error",
@@ -64,10 +60,7 @@ export default [
       "@typescript-eslint/init-declarations": "warn",
       "@typescript-eslint/no-loop-func": "warn",
       "@typescript-eslint/no-magic-numbers": "warn",
-      "@typescript-eslint/no-restricted-imports": [
-        "warn",
-        { paths: commonBannedImports, patterns: commonBannedImportPatterns }
-      ],
+      "@typescript-eslint/no-restricted-imports": "warn",
       "@typescript-eslint/no-shadow": "warn",
       "@typescript-eslint/no-unused-expressions": "warn",
       "@typescript-eslint/no-use-before-define": "error",

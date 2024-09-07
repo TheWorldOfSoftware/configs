@@ -1,12 +1,6 @@
 import eslint from "@eslint/js";
 import globals from "globals";
 
-/** @type string[] */
-const commonBannedGlobals = [];
-/** @type string[] */
-const commonBannedImportPatterns = [];
-/** @type string[] */
-const commonBannedImports = [];
 const commonBannedKeywords = [
   "object",
   "array",
@@ -22,8 +16,6 @@ const commonBannedKeywords = [
   "data",
   "event"
 ];
-/** @type string[] */
-const commonBannedProperties = [];
 const commonBannedSyntax = [
   {
     selector: "DebuggerStatement",
@@ -35,23 +27,20 @@ const commonBannedSyntax = [
       "Class expressions are not allowed. Please use a named class instead."
   }
 ];
-/** @type string[] */
-const commonShortKeywords = [];
 
 export default {
-  files: ["**/*.js", "**/*.cjs", "**/*.mjs"],
-  ignores: ["**/dist/**"],
-
   languageOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
 
     globals: globals.nodeBuiltin
   },
+
   linterOptions: {
     noInlineConfig: true,
     reportUnusedDisableDirectives: true
   },
+
   rules: {
     ...eslint.configs.recommended.rules,
 
@@ -59,18 +48,13 @@ export default {
     "array-callback-return": "error",
     "default-param-last": "error",
     "no-await-in-loop": "error",
-    "no-constant-binary-expression": "error",
     "no-constructor-return": "error",
     "no-duplicate-imports": "error",
-    "no-new-native-nonconstructor": "error",
-    // Disabled in favour of "no-new-native-nonconstructor"
-    "no-new-symbol": "off",
     "no-promise-executor-return": "error",
     "no-self-compare": "error",
     "no-template-curly-in-string": "error",
     "no-unmodified-loop-condition": "error",
     "no-unreachable-loop": "error",
-    "no-unused-private-class-members": "error",
     "no-use-before-define": "error",
     "require-atomic-updates": "error",
 
@@ -94,7 +78,7 @@ export default {
     "grouped-accessor-pairs": "warn",
     "guard-for-in": "warn",
     "id-denylist": ["warn", ...commonBannedKeywords],
-    "id-length": ["warn", { exceptions: commonShortKeywords }],
+    "id-length": "warn",
     "init-declarations": "warn",
     "logical-assignment-operators": "warn",
     "max-classes-per-file": "warn",
@@ -104,7 +88,6 @@ export default {
     "max-nested-callbacks": "warn",
     "max-params": "warn",
     "max-statements": "warn",
-    "multiline-comment-style": "warn",
     "new-cap": "warn",
     "no-alert": "warn",
     "no-array-constructor": "warn",
@@ -116,7 +99,6 @@ export default {
     "no-div-regex": "warn",
     "no-else-return": "warn",
     "no-empty-function": "warn",
-    "no-empty-static-block": "warn",
     // Disabled in favour of rule "eqeqeq"
     "no-eq-null": "off",
     "no-eval": "warn",
@@ -153,12 +135,9 @@ export default {
       "warn",
       { restrictedNamedExports: commonBannedKeywords }
     ],
-    "no-restricted-globals": ["warn", ...commonBannedGlobals],
-    "no-restricted-imports": [
-      "warn",
-      { paths: commonBannedImports, patterns: commonBannedImportPatterns }
-    ],
-    "no-restricted-properties": ["warn", ...commonBannedProperties],
+    "no-restricted-globals": "warn",
+    "no-restricted-imports": "warn",
+    "no-restricted-properties": "warn",
     "no-restricted-syntax": ["warn", ...commonBannedSyntax],
     "no-script-url": "warn",
     "no-sequences": "warn",
