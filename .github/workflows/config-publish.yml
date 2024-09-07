@@ -28,18 +28,18 @@ jobs:
 
       - name: Publish ESLint
         shell: bash
-        run: pnpm --filter './eslint' --recursive publish --fail-if-no-match --access public --no-git-checks
+        run: pnpm --recursive publish eslint --fail-if-no-match --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish Prettier
         shell: bash
-        run: pnpm --filter './prettier' --recursive publish --fail-if-no-match --access public --no-git-checks
+        run: pnpm --recursive publish prettier --fail-if-no-match --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish TypeScript
         shell: bash
-        run: pnpm --filter './typescript' --recursive publish --fail-if-no-match --access public --no-git-checks
+        run: pnpm --recursive publish typescript --fail-if-no-match --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
