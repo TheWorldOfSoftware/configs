@@ -1,8 +1,25 @@
 import eslint from "@worldofsoftware/eslint-config";
 import { includeIgnoreFile } from "@eslint/compat";
 import path from "node:path";
-import typescriptEslint from "@worldofsoftware/eslint-config-typescript";
 
 const gitIgnorePath = path.resolve(import.meta.dirname, ".gitignore");
 
-export default [includeIgnoreFile(gitIgnorePath), eslint, ...typescriptEslint];
+/**
+ * @type {(import("eslint").Linter.Config | import("@typescript-eslint/utils").TSESLint.FlatConfig.Config)[]}
+ */
+const configurations = [includeIgnoreFile(gitIgnorePath), eslint];
+
+try {
+  await import("typescript");
+  /**
+   * @type {{ default: import("@typescript-eslint/utils").TSESLint.FlatConfig.Config[]}}
+   */
+  const { default: typescriptEslint } = await import(
+    "@worldofsoftware/eslint-config-typescript"
+  );
+  configurations.push(...typescriptEslint);
+} catch {
+  // Empty
+}
+
+export default configurations;

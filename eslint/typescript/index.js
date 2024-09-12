@@ -1,5 +1,6 @@
 import typescriptEslint from "typescript-eslint";
 
+/** @type {import("@typescript-eslint/utils").TSESLint.FlatConfig.ConfigArray}*/
 export default [
   ...typescriptEslint.configs.strictTypeChecked,
   {

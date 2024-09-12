@@ -28,6 +28,7 @@ const commonBannedSyntax = [
   }
 ];
 
+/** @type {import("eslint").Linter.Config} */
 export default {
   languageOptions: {
     ecmaVersion: "latest",
