@@ -1,3 +1,5 @@
+import type { EcmaVersion } from "@typescript-eslint/utils/ts-eslint";
+
 declare module "eslint-plugin-import" {
   export const configs: {
     recommended: {
@@ -8,7 +10,7 @@ declare module "eslint-plugin-import" {
       >;
       parserOptions: {
         sourceType: "module";
-        ecmaVersion: "2018";
+        ecmaVersion: EcmaVersion;
       };
     };
     errors: {
@@ -53,3 +55,5 @@ declare module "eslint-plugin-import" {
     };
   };
 }
+
+export default { configs };
