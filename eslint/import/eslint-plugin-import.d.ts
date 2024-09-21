@@ -56,4 +56,4 @@ declare module "eslint-plugin-import" {
   };
 }
 
-export default {};
+export default { configs };

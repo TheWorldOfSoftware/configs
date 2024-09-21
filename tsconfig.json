@@ -1,6 +1,9 @@
 {
   "extends": "@worldofsoftware/typescript-config",
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
+    "paths": {
+      "eslint-plugin-import": ["./eslint/import/eslint-plugin-import.d.ts"]
+    }
   }
 }
