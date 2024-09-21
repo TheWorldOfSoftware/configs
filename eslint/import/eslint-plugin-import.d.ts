@@ -1,13 +1,11 @@
 import type { EcmaVersion } from "@typescript-eslint/utils/ts-eslint";
+import type { Linter } from "eslint";
 
 declare module "eslint-plugin-import" {
   export const configs: {
     recommended: {
       plugins: string[];
-      rules: Record<
-        string,
-        string | number | object | [string, string | object]
-      >;
+      rules: Partial<Linter.RulesRecord>;
       parserOptions: {
         sourceType: "module";
         ecmaVersion: EcmaVersion;
@@ -15,24 +13,15 @@ declare module "eslint-plugin-import" {
     };
     errors: {
       plugins: string[];
-      rules: Record<
-        string,
-        string | number | object | [string, string | object]
-      >;
+      rules: Partial<Linter.RulesRecord>;
     };
     warnings: {
       plugins: string[];
-      rules: Record<
-        string,
-        string | number | object | [string, string | object]
-      >;
+      rules: Partial<Linter.RulesRecord>;
     };
     "stage-0": {
       plugins: string[];
-      rules: Record<
-        string,
-        string | number | object | [string, string | object]
-      >;
+      rules: Partial<Linter.RulesRecord>;
     };
     react: {
       settings: Record<string, unknown>;
@@ -48,10 +37,7 @@ declare module "eslint-plugin-import" {
     };
     typescript: {
       settings: Record<string, unknown>;
-      rules: Record<
-        string,
-        string | number | object | [string, string | object]
-      >;
+      rules: Partial<Linter.RulesRecord>;
     };
   };
 }

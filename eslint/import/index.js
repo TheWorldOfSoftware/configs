@@ -1,5 +1,6 @@
 import eslintImport from "eslint-plugin-import";
 
+/** @type {import("eslint").Linter.Config} */
 export default {
   languageOptions: {
     ecmaVersion: "latest",

@@ -1,6 +1,7 @@
 import eslintImport from "eslint-plugin-import";
 import typescriptEslintParser from "@typescript-eslint/parser";
 
+/** @type {import("eslint").Linter.Config} */
 export default {
   ...eslintImport.configs.typescript,
 
