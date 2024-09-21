@@ -1,6 +1,6 @@
 {
   "name": "@worldofsoftware/eslint-config",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "license": "AGPL-3.0-only",
   "author": "Scraps",
   "private": false,
@@ -8,11 +8,14 @@
   "engines": {
     "node": ">=20.11.0"
   },
+  "files": [
+    "index.js"
+  ],
   "exports": {
     ".": "./index.js"
   },
   "dependencies": {
-    "@eslint/js": "^9.9.1",
+    "@eslint/js": "^9.10.0",
     "globals": "^15.9.0"
   }
 }

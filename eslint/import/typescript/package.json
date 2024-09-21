@@ -1,6 +1,6 @@
 {
   "name": "@worldofsoftware/eslint-config-import-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "AGPL-3.0-only",
   "author": "Scraps",
   "private": false,
@@ -8,6 +8,9 @@
   "engines": {
     "node": ">=20.11.0"
   },
+  "files": [
+    "index.js"
+  ],
   "exports": {
     ".": "./index.js"
   },
@@ -15,5 +18,8 @@
     "@typescript-eslint/parser": "^8.2.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.2.0 <5.6.0"
   }
 }
