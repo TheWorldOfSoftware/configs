@@ -1,12 +1,6 @@
 import eslint from "@eslint/js";
 import globals from "globals";
 
-/** @type string[] */
-const commonBannedGlobals = [];
-/** @type string[] */
-const commonBannedImportPatterns = [];
-/** @type string[] */
-const commonBannedImports = [];
 const commonBannedKeywords = [
   "object",
   "array",
@@ -22,8 +16,6 @@ const commonBannedKeywords = [
   "data",
   "event"
 ];
-/** @type string[] */
-const commonBannedProperties = [];
 const commonBannedSyntax = [
   {
     selector: "DebuggerStatement",
@@ -35,13 +27,9 @@ const commonBannedSyntax = [
       "Class expressions are not allowed. Please use a named class instead."
   }
 ];
-/** @type string[] */
-const commonShortKeywords = [];
 
+/** @type {import("eslint").Linter.Config} */
 export default {
-  files: ["**/*.js", "**/*.cjs", "**/*.mjs"],
-  ignores: ["**/dist/**"],
-
   languageOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
@@ -94,7 +82,7 @@ export default {
     "grouped-accessor-pairs": "warn",
     "guard-for-in": "warn",
     "id-denylist": ["warn", ...commonBannedKeywords],
-    "id-length": ["warn", { exceptions: commonShortKeywords }],
+    "id-length": "warn",
     "init-declarations": "warn",
     "logical-assignment-operators": "warn",
     "max-classes-per-file": "warn",
@@ -153,12 +141,9 @@ export default {
       "warn",
       { restrictedNamedExports: commonBannedKeywords }
     ],
-    "no-restricted-globals": ["warn", ...commonBannedGlobals],
-    "no-restricted-imports": [
-      "warn",
-      { paths: commonBannedImports, patterns: commonBannedImportPatterns }
-    ],
-    "no-restricted-properties": ["warn", ...commonBannedProperties],
+    "no-restricted-globals": "warn",
+    "no-restricted-imports": "warn",
+    "no-restricted-properties": "warn",
     "no-restricted-syntax": ["warn", ...commonBannedSyntax],
     "no-script-url": "warn",
     "no-sequences": "warn",

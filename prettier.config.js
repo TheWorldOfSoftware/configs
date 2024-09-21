@@ -1,3 +1,1 @@
-import prettier from "@worldofsoftware/prettier-config";
-
-export default prettier;
+export default "@worldofsoftware/prettier-config";
