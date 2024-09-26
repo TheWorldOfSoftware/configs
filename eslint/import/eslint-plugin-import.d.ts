@@ -42,4 +42,4 @@ declare module "eslint-plugin-import" {
   };
 }
 
-export default { configs };
+export default {};

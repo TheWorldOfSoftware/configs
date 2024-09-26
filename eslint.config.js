@@ -12,12 +12,12 @@ const configurations = [includeIgnoreFile(gitIgnorePath), eslint];
 try {
   await import("typescript");
   /**
-   * @type {{ default: import("@typescript-eslint/utils").TSESLint.FlatConfig.Config[]}}
+   * @type {{ default: import("@typescript-eslint/utils").TSESLint.FlatConfig.Config}}
    */
   const { default: typescriptEslint } = await import(
     "@worldofsoftware/eslint-config-typescript"
   );
-  configurations.push(...typescriptEslint);
+  configurations.push(typescriptEslint);
 } catch {
   // Empty
 }
