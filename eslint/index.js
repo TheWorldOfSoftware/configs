@@ -145,7 +145,6 @@ export default {
     "no-shadow": "warn",
     "no-throw-literal": "warn",
     "no-undef-init": "warn",
-    "no-undefined": "warn",
     "no-underscore-dangle": "warn",
     "no-unneeded-ternary": "warn",
     "no-unused-expressions": "warn",
