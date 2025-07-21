@@ -1,3 +1,1 @@
-export default {
-  trailingComma: "none"
-};
+export default { trailingComma: "none", objectWrap: "collapse" };

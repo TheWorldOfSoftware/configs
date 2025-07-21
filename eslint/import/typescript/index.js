@@ -10,14 +10,10 @@ export default {
     sourceType: "module",
 
     parser: typescriptEslintParser,
-    parserOptions: {
-      projectService: true
-    }
+    parserOptions: { projectService: true }
   },
 
-  plugins: {
-    import: eslintImport
-  },
+  plugins: { import: eslintImport },
 
   rules: {
     ...eslintImport.configs.recommended.rules,

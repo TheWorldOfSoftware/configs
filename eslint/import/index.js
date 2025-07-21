@@ -2,14 +2,9 @@ import eslintImport from "eslint-plugin-import";
 
 /** @type {import("eslint").Linter.Config} */
 export default {
-  languageOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module"
-  },
+  languageOptions: { ecmaVersion: "latest", sourceType: "module" },
 
-  plugins: {
-    import: eslintImport
-  },
+  plugins: { import: eslintImport },
 
   rules: {
     ...eslintImport.configs.recommended.rules,

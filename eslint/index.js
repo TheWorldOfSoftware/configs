@@ -37,10 +37,7 @@ export default {
     globals: globals.nodeBuiltin
   },
 
-  linterOptions: {
-    noInlineConfig: true,
-    reportUnusedDisableDirectives: true
-  },
+  linterOptions: { noInlineConfig: true, reportUnusedDisableDirectives: true },
 
   rules: {
     ...eslint.configs.recommended.rules,

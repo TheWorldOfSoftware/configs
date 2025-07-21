@@ -8,10 +8,7 @@ const reducedConfigs = typescriptEslint.configs.strictTypeChecked.reduce(
   (flattenedConfig, config) => ({
     ...flattenedConfig,
     ...config,
-    rules: {
-      ...flattenedConfig.rules,
-      ...config.rules
-    }
+    rules: { ...flattenedConfig.rules, ...config.rules }
   }),
   {}
 );
@@ -24,9 +21,7 @@ export default {
 
   languageOptions: {
     ...reducedConfigs.languageOptions,
-    parserOptions: {
-      projectService: true
-    }
+    parserOptions: { projectService: true }
   },
 
   rules: {
