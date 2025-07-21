@@ -141,6 +141,7 @@ export default {
     "no-sequences": "warn",
     "no-shadow": "warn",
     "no-throw-literal": "warn",
+    "no-unassigned-vars": "warn",
     "no-undef-init": "warn",
     "no-underscore-dangle": "warn",
     "no-unneeded-ternary": "warn",
