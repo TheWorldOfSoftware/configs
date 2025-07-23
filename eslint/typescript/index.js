@@ -54,6 +54,7 @@ export default {
       { checkTypePredicates: true }
     ],
     "@typescript-eslint/no-unnecessary-qualifier": "error",
+    "@typescript-eslint/no-unnecessary-type-conversion": "error",
     "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/parameter-properties": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
