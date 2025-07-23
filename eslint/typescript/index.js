@@ -47,6 +47,7 @@ export default {
     "@typescript-eslint/explicit-member-accessibility": "error",
     "@typescript-eslint/explicit-module-boundary-types": "error",
     "@typescript-eslint/method-signature-style": "error",
+    "@typescript-eslint/no-base-to-string": ["error", { checkUnknown: true }],
     "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/no-unnecessary-qualifier": "error",
     "@typescript-eslint/no-useless-empty-export": "error",
