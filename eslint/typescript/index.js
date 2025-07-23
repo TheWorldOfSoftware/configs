@@ -49,6 +49,10 @@ export default {
     "@typescript-eslint/method-signature-style": "error",
     "@typescript-eslint/no-base-to-string": ["error", { checkUnknown: true }],
     "@typescript-eslint/no-import-type-side-effects": "error",
+    "@typescript-eslint/no-unnecessary-condition": [
+      "error",
+      { checkTypePredicates: true }
+    ],
     "@typescript-eslint/no-unnecessary-qualifier": "error",
     "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/parameter-properties": "error",
