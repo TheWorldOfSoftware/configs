@@ -7,7 +7,7 @@ export default {
   plugins: { import: eslintImport },
 
   rules: {
-    ...eslintImport.configs.recommended.rules,
+    ...eslintImport.flatConfigs.recommended.rules,
 
     // Helpful warnings
     "import/no-deprecated": "warn",

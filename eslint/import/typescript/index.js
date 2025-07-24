@@ -3,7 +3,7 @@ import typescriptEslintParser from "@typescript-eslint/parser";
 
 /** @type {import("eslint").Linter.Config} */
 export default {
-  ...eslintImport.configs.typescript,
+  ...eslintImport.flatConfigs.typescript,
 
   languageOptions: {
     ecmaVersion: "latest",
