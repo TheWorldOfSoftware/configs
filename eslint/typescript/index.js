@@ -8,10 +8,7 @@ const reducedConfigs = typescriptEslint.configs.strictTypeChecked.reduce(
   (flattenedConfig, config) => ({
     ...flattenedConfig,
     ...config,
-    rules: {
-      ...flattenedConfig.rules,
-      ...config.rules
-    }
+    rules: { ...flattenedConfig.rules, ...config.rules }
   }),
   {}
 );
@@ -24,9 +21,7 @@ export default {
 
   languageOptions: {
     ...reducedConfigs.languageOptions,
-    parserOptions: {
-      projectService: true
-    }
+    parserOptions: { projectService: true }
   },
 
   rules: {
@@ -52,8 +47,15 @@ export default {
     "@typescript-eslint/explicit-member-accessibility": "error",
     "@typescript-eslint/explicit-module-boundary-types": "error",
     "@typescript-eslint/method-signature-style": "error",
+    "@typescript-eslint/no-base-to-string": ["error", { checkUnknown: true }],
     "@typescript-eslint/no-import-type-side-effects": "error",
+    "@typescript-eslint/no-unnecessary-condition": [
+      "error",
+      { checkTypePredicates: true }
+    ],
     "@typescript-eslint/no-unnecessary-qualifier": "error",
+    "@typescript-eslint/no-unnecessary-type-conversion": "error",
+    "@typescript-eslint/no-unsafe-type-assertion": "error",
     "@typescript-eslint/no-useless-empty-export": "error",
     "@typescript-eslint/parameter-properties": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
@@ -64,7 +66,10 @@ export default {
     "@typescript-eslint/promise-function-async": "error",
     "@typescript-eslint/require-array-sort-compare": "error",
     "@typescript-eslint/strict-boolean-expressions": "error",
-    "@typescript-eslint/switch-exhaustiveness-check": "error",
+    "@typescript-eslint/switch-exhaustiveness-check": [
+      "error",
+      { considerDefaultExhaustiveForUnions: true }
+    ],
 
     // ESLint Extension Rules
     "@typescript-eslint/class-methods-use-this": "warn",
